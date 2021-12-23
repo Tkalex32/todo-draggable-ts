@@ -1,6 +1,6 @@
 .input {
   display: flex;
-  width: 95%;
+  width: 90%;
   position: relative;
   align-items: center;
 }
@@ -45,60 +45,22 @@
   box-shadow: 0 0 5px black;
 }
 
-.container {
-  width: 95%;
-  display: flex;
-  margin-top: 10px;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
 .todos {
-  border-radius: 5px;
   display: flex;
-  flex-direction: column;
-  width: 47.5%;
-  padding: 15px;
-  background-color: rgb(50, 195, 205);
-}
-
-.remove {
-  background-color: rgb(235, 103, 80);
-}
-
-.dragactive {
-  background-color: rgb(0, 221, 236);
-}
-
-.dragcomplete {
-  background-color: rgb(255, 38, 0);
-}
-
-.todos-heading {
-  font-size: 30px;
-  text-align: center;
-  color: white;
+  justify-content: space-evenly;
+  width: 90%;
+  flex-wrap: wrap;
 }
 
 .todos-single {
   display: flex;
+  width: 29.5%;
   border-radius: 5px;
   padding: 20px;
   margin-top: 15px;
   background-color: #0093e9;
   background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
-  transition: 0.2s;
 }
-
-.drag {
-  box-shadow: 0 0 20px black;
-}
-
-.todos-single:hover {
-  box-shadow: 0 0 5px black;
-  transform: scale(1.03);
-}
-
 .todos-single-text {
   flex: 1;
   padding: 5px;
@@ -122,9 +84,9 @@
   color: black;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .todos-single {
-    width: 90%;
+    width: 40%;
   }
 }
 
@@ -132,12 +94,10 @@
   .input {
     width: 95%;
   }
-  .container {
-    width: 95%;
-    flex-direction: column;
-  }
   .todos {
     width: 95%;
-    margin-bottom: 10px;
+  }
+  .todos-single {
+    width: 100%;
   }
 }
